@@ -1,0 +1,6 @@
+You have been assigned to create an interactive data visualization based on the developers salary data from JetBrains Developer Ecosystem Survey 2024.
+Use the following Figma design (password AirRPP_homework2025) and this reference page to implement this visualization with working filters.
+Use calculatorData.json as data for visualization.
+You can use any frontend framework for this task.
+The data can be either stored as a static file, or served via your own API (or via any other method).
+Include README on how to set up the project and run the application.
