@@ -1,0 +1,37 @@
+{
+  "name": "salary-calculator-vue",
+  "version": "1.0.0",
+  "description": "Interactive salary visualization based on JetBrains Developer Ecosystem Survey 2024",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "node server.js",
+    "start": "./start.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamdanre/air_2.git"
+  },
+  "keywords": ["vue", "salary", "visualization", "jetbrains"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamdanre/air_2/issues"
+  },
+  "homepage": "https://github.com/iamdanre/air_2#readme",
+  "dependencies": {
+    "vue": "^3.5.17",
+    "chart.js": "^4.4.1",
+    "chartjs-adapter-date-fns": "^3.0.0",
+    "date-fns": "^3.0.0",
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "vite": "^6.3.5"
+  }
+}
