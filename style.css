@@ -1,0 +1,101 @@
+/* General Reset & Body Styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Matching reference.html font */
+    margin: 0;
+    background-color: #ffffff; /* Reference background */
+    color: #202124; /* Reference text color */
+    display: flex;
+    justify-content: center;
+    padding-top: 40px; /* Space from top */
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    /* box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 2px 6px 2px rgba(60,64,67,0.149); Reference shadow */
+    width: 90%;
+    max-width: 1000px; /* Increased max-width */
+    border: 1px solid #dadce0; /* Border like reference cards */
+}
+
+h1 {
+    font-size: 28px; /* Slightly larger */
+    font-weight: 500; /* Medium weight */
+    text-align: center;
+    color: #202124;
+    margin-bottom: 30px;
+}
+
+/* Filters Styling - closer to reference.html */
+.filters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f8f9fa; /* Lighter background for filter area */
+    border-radius: 8px;
+    border: 1px solid #dadce0;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-group label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500; /* Medium weight labels */
+    color: #5f6368; /* Subtler label color */
+}
+
+.filter-group select {
+    padding: 10px 12px;
+    border-radius: 4px;
+    border: 1px solid #dadce0;
+    background-color: #fff;
+    font-size: 14px;
+    color: #202124;
+    appearance: none; /* For custom arrow, if added */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M5%207.5L10%2012.5L15%207.5%22%20stroke%3D%22%235F6368%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px 16px;
+    cursor: pointer;
+}
+
+.filter-group select:focus {
+    outline: none;
+    border-color: #1a73e8; /* Google blue for focus */
+    box-shadow: 0 0 0 2px rgba(26,115,232,0.2);
+}
+
+/* Chart Container Styling */
+.chart-container {
+    width: 100%;
+    height: 500px; /* Increased height for horizontal bars */
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .filters {
+        grid-template-columns: 1fr; /* Stack filters on smaller screens */
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .container {
+        padding: 16px;
+    }
+}
+/* Add Roboto font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
